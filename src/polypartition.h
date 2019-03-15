@@ -132,7 +132,13 @@ class TPPLPoly {
         
         //inits the polygon with numpoints vertices
         void Init(long numpoints);
-        
+
+        //shrink the allocation to n vertices
+        inline void Shrink(long n) {
+            assert(n <= numpoints);
+            numpoints = n;
+        }
+
         //creates a triangle with points p1,p2,p3
         void Triangle(TPPLPoint &p1, TPPLPoint &p2, TPPLPoint &p3);
         
