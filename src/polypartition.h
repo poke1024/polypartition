@@ -23,6 +23,7 @@
 
 #include <list>
 #include <set>
+#include <cassert>
 
 typedef double tppl_float;
 
